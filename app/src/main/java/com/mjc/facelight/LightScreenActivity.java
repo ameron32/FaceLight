@@ -24,6 +24,10 @@ import java.util.Calendar;
 
 /**
  * Created by Micah Comer on 2/21/2017.
+ *
+ * Slowly increase screen brightness over a period of time (light fade duration). Final brightness 100%.
+ * At alarm time, default android system alarm sound begin to play from 0 to 100% volume over a period of time (sound fade duration).
+ * Touching anywhere on the screen stops the alarm and exits the app.
  */
 
 public class LightScreenActivity extends Activity implements View.OnClickListener {
@@ -32,7 +36,8 @@ public class LightScreenActivity extends Activity implements View.OnClickListene
     LinearLayout ll;
     AlarmSurfaceView asv;
     AlarmThread alarmThread;
-    AlarmSoundThread alarmSoundThread;
+//    AlarmSoundThread alarmSoundThread;
+
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.

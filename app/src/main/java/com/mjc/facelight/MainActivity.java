@@ -21,7 +21,16 @@ import java.util.GregorianCalendar;
 import java.util.Timer;
 import java.util.TimerTask;
 
-
+/**
+ * Users can interface with only THIS one screen.
+ *
+ * Options to be on this screen:
+ *   Alarm Time (time picker)
+ *   Light Fade Duration (slider: 5, 10, 15, 20, 25, or 30 minutes)
+ *   Sound Fade Duration (slider: 1, 2, 3, 4, or 5 minutes)
+ *   Alarm On/Off Toggle
+ *   Done Button
+ */
 public class MainActivity extends AppCompatActivity implements TimePicker.OnTimeChangedListener, SeekBar.OnSeekBarChangeListener {
 
     TimePicker tp;
